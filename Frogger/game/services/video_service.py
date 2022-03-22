@@ -1,3 +1,4 @@
+from json import load
 import pyray
 
 
@@ -28,7 +29,9 @@ class VideoService:
         the beginning of the game's output phase.
         """
         pyray.begin_drawing()
-        pyray.clear_background(pyray.BLACK)
+        # background = pyray("Frogger/assets/images/road-bg.png")
+        # background = LoadTexture("Frogger/assets/images/road-bg.png")
+        pyray.clear_background(pyray.BLACK) # I can change the color here
         if self._debug == True:
             self._draw_grid()
     

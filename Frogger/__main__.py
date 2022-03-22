@@ -26,12 +26,15 @@ CAPTION = "Frogger"
 WHITE = Color(255, 255, 255)
 DEFAULT_FROG = 20
 DEFAULT_CARS = 20
+ROAD_IMAGE = "Frogger/assets/images/road-bg.png"
 
 
 def main():
     
     # create the cast
     cast = Cast()
+    # background = LoadImage("Frogger/assets/images/road-bg.png")
+    # background = Image(ROAD_IMAGE)
     
     # create the banner
     banner = Actor()
