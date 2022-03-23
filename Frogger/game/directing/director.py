@@ -44,9 +44,9 @@ class Director:
         Args:
             cast (Cast): The cast of actors.
         """
-        frog = cast.get_first_actor("frog")
+        chicken = cast.get_first_actor("chicken")
         velocity = self._keyboard_service.get_direction()
-        frog.set_velocity(velocity)        
+        chicken.set_velocity(velocity)        
    
 
     def _do_updates(self, cast):
@@ -56,12 +56,12 @@ class Director:
             cast (Cast): The cast of actors.
         """
         banner = cast.get_first_actor("banners")
-        frog = cast.get_first_actor("frog")
+        chicken = cast.get_first_actor("chicken")
         actors = cast.get_all_actors()
         # banner.set_text(f"You have {points} points")
         max_x = self._video_service.get_width()
         max_y = self._video_service.get_height()
-        frog.move_next(max_x, max_y)
+        chicken.move_next(max_x, max_y)
         npc = cast.get_actors("npc")
         cars = cast.get_actors("cars")
 
@@ -70,7 +70,7 @@ class Director:
             actor.move_next(max_x, max_y)
         
         for npc in npc:  
-            if frog.get_position().equals(npc.get_position()):
+            if chicken.get_position().equals(npc.get_position()):
                 self._points += 1
                 banner.set_text(f"You have {self._points} points")
                 cast.remove_actor("npc", npc)
@@ -80,7 +80,7 @@ class Director:
                 
         
         for cars in cars:  
-            if frog.get_position().equals(cars.get_position()):
+            if chicken.get_position().equals(cars.get_position()):
                 self._points -= 1
                 banner.set_text(f"You have {self._points} points")
                 cast.remove_actor("cars", cars)

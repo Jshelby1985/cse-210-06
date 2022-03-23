@@ -24,7 +24,7 @@ COLS = 60
 ROWS = 40
 CAPTION = "Frogger"
 WHITE = Color(255, 255, 255)
-DEFAULT_FROG = 20
+DEFAULT_CHICKEN = 20
 DEFAULT_CARS = 20
 ROAD_IMAGE = "Frogger/assets/images/road-bg.png"
 
@@ -44,17 +44,17 @@ def main():
     banner.set_position(Point(CELL_SIZE, 0))
     cast.add_actor("banners", banner)
     
-    # create the frog
+    # create the chicken
     x = int(MAX_X / 2)
     y = MAX_Y - CELL_SIZE
     position = Point(x, y)
 
-    frog = Actor()
-    frog.set_text("_")
-    frog.set_font_size(FONT_SIZE)
-    frog.set_color(WHITE)
-    frog.set_position(position)
-    cast.add_actor("frog", frog)
+    chicken = Actor()
+    chicken.set_text("_")
+    chicken.set_font_size(FONT_SIZE)
+    chicken.set_color(WHITE)
+    chicken.set_position(position)
+    cast.add_actor("chicken", chicken)
     
     # create the artifacts
 
@@ -65,7 +65,7 @@ def main():
    
 
 
-    for n in range(DEFAULT_FROG): 
+    for n in range(DEFAULT_CHICKEN): 
         npc = Npc(COLS, CELL_SIZE, FONT_SIZE, 1)
         cast.add_actor("npc", npc)
 
