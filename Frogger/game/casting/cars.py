@@ -34,7 +34,7 @@ class Cars(Actor):
         self.set_font_size(FONT_SIZE)
         self.set_color(color)
         self.set_position(position)
-        direction = Point(0, velocity_factor)
+        direction = Point(velocity_factor, 0)
         direction = direction.scale(cell_size)
         self.set_velocity(direction)
         

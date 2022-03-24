@@ -59,7 +59,7 @@ def main():
     # create the artifacts
 
     for n in range(DEFAULT_CARS): 
-        cars = Cars(COLS, CELL_SIZE, FONT_SIZE, 1)
+        cars = Cars(COLS, CELL_SIZE, FONT_SIZE, -1)
         cast.add_actor("cars", cars)
 
    
