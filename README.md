@@ -1,6 +1,5 @@
 # cse-210-06
 Final Project
-test commit by bryan
 
 --Kwadjo-- gem (NPC) = fly (add a point or life)
 **DONE** --Jeremy-- robot = frog  -move anywhere on the grid, single button press per space on grid
