@@ -165,7 +165,7 @@ class SceneManager:
                     
                     position = Point(x, y)
                     size = Point(BRICK_WIDTH, BRICK_HEIGHT)
-                    velocity = Point(0, 0)
+                    velocity = Point(-1, 0)
                     images = BRICK_IMAGES[color][0:frames]
 
                     body = Body(position, size, velocity)
