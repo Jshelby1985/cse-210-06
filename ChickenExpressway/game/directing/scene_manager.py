@@ -172,7 +172,8 @@ class SceneManager:
                     animation = Animation(images, BRICK_RATE, BRICK_DELAY)
 
                     brick = Brick(body, animation, points)
-                    cast.add_actor(BRICK_GROUP, brick)
+                    if frames > 0:
+                        cast.add_actor(BRICK_GROUP, brick)
 
     def _add_dialog(self, cast, message):
         cast.clear_actors(DIALOG_GROUP)
