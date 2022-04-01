@@ -140,9 +140,6 @@ class SceneManager:
     # ----------------------------------------------------------------------------------------------
     
 
-
-
-
     def _add_bricks(self, cast):
         cast.clear_actors(BRICK_GROUP)
         
@@ -164,11 +161,18 @@ class SceneManager:
                     
                     if frames == 1:
                         points *= 2
-                    
-                    position = Point(x, y)
-                    size = Point(BRICK_WIDTH, BRICK_HEIGHT)
-                    velocity = Point(-1, 0)
-                    images = BRICK_IMAGES[color][0:frames]
+
+                    if r == 4 or r == 12:
+
+                        position = Point(x, y)
+                        size = Point(BRICK_WIDTH, BRICK_HEIGHT)
+                        velocity = Point(1, 0)
+                        images = BRICK_IMAGES[color][0:frames]
+                    else:
+                        position = Point(x, y)
+                        size = Point(BRICK_WIDTH, BRICK_HEIGHT)
+                        velocity = Point(-1, 0)
+                        images = BRICK_IMAGES[color][0:frames]
 
                     body = Body(position, size, velocity)
                     animation = Animation(images, BRICK_RATE, BRICK_DELAY)

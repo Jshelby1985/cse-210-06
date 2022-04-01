@@ -115,6 +115,43 @@ BRICK_DELAY = 0.5
 BRICK_RATE = 4
 BRICK_POINTS = 50
 
+# car1
+CAR1_GROUP = "car1"
+CAR1_IMAGE = {"b":["ChickenExpressway/assets/images/010.png"]}
+CAR1_WIDTH = 80
+CAR1_HEIGHT = 28
+CAR1_DELAY = 0.5
+CAR1_RATE = 4
+CAR1_POINTS = 50
+
+# car2
+CAR2_GROUP = "car2"
+CAR2_IMAGE = {"g":["ChickenExpressway\assets\images\car2.png"]}
+CAR2_WIDTH = 80
+CAR2_HEIGHT = 28
+CAR2_DELAY = 0.5
+CAR2_RATE = 4
+CAR2_POINTS = 50
+
+# car3
+CAR3_GROUP = "car3"
+CAR3_IMAGE = {"p":["ChickenExpressway\assets\images\car3.png"]}
+CAR3_WIDTH = 80
+CAR3_HEIGHT = 28
+CAR3_DELAY = 0.5
+CAR3_RATE = 4
+CAR3_POINTS = 50
+
+# car4
+CAR4_GROUP = "car4"
+CAR4_IMAGE = {"y":["ChickenExpressway\assets\images\car4.png"]}
+CAR4_WIDTH = 80
+CAR4_HEIGHT = 28
+CAR4_DELAY = 0.5
+CAR4_RATE = 4
+CAR4_POINTS = 50
+
+
 # DIALOG
 DIALOG_GROUP = "dialogs"
 ENTER_TO_START = "PRESS ENTER TO START"
