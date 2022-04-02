@@ -24,16 +24,16 @@ class CollideBrickAction(Action):
             if self._physics_service.has_collided(racket_body, brick_body):
                 sound = Sound(BOUNCE_SOUND)
                 self._audio_service.play_sound(sound)
-                points = brick.get_points()
+
                 stats.lose_life()
                 position = Point(CENTER_X - RACKET_WIDTH , SCREEN_HEIGHT - RACKET_HEIGHT)
                 racket_body.set_position(position)
                 
-                if stats.get_lives() > 0:
-                    callback.on_next(TRY_AGAIN) 
-                else:
-                    callback.on_next(GAME_OVER)
-                    self._audio_service.play_sound(OVER_SOUND)
+                # if stats.get_lives() > 0:
+                #     callback.on_next(TRY_AGAIN) 
+                # else:
+                #     callback.on_next(GAME_OVER)
+                #     self._audio_service.play_sound(OVER_SOUND)
 
 
 

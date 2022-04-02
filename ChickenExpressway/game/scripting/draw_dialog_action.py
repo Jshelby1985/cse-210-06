@@ -1,6 +1,6 @@
 from constants import *
 from game.scripting.action import Action
-from services.raylib.raylib_video_service import RaylibVideoService
+from game.services.raylib.raylib_video_service import RaylibVideoService
 
 
 class DrawDialogAction(Action):
