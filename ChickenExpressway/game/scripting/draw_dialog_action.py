@@ -1,5 +1,6 @@
 from constants import *
 from game.scripting.action import Action
+from services.raylib.raylib_video_service import RaylibVideoService
 
 
 class DrawDialogAction(Action):
@@ -13,3 +14,5 @@ class DrawDialogAction(Action):
             text = dialog.get_text()
             position = dialog.get_position()
             self._video_service.draw_text(text, position)
+
+            
