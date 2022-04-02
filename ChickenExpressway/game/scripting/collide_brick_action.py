@@ -1,6 +1,9 @@
 from constants import *
 from game.casting.sound import Sound
 from game.scripting.action import Action
+from game.casting.point import Point
+from game.casting.body import Body
+
 
 
 class CollideBrickAction(Action):
@@ -10,18 +13,27 @@ class CollideBrickAction(Action):
         self._audio_service = audio_service
         
     def execute(self, cast, script, callback):
-        ball = cast.get_first_actor(BALL_GROUP)
+        racket = cast.get_first_actor(RACKET_GROUP)
         bricks = cast.get_actors(BRICK_GROUP)
         stats = cast.get_first_actor(STATS_GROUP)
         
         for brick in bricks:
-            ball_body = ball.get_body()
+            racket_body = racket.get_body()
             brick_body = brick.get_body()
 
-            if self._physics_service.has_collided(ball_body, brick_body):
-                ball.bounce_y()
+            if self._physics_service.has_collided(racket_body, brick_body):
                 sound = Sound(BOUNCE_SOUND)
                 self._audio_service.play_sound(sound)
                 points = brick.get_points()
-                stats.add_points(points)
-                cast.remove_actor(BRICK_GROUP, brick)
+                stats.lose_life()
+                position = Point(CENTER_X - RACKET_WIDTH , SCREEN_HEIGHT - RACKET_HEIGHT)
+                racket_body.set_position(position)
+                
+                if stats.get_lives() > 0:
+                    callback.on_next(TRY_AGAIN) 
+                else:
+                    callback.on_next(GAME_OVER)
+                    self._audio_service.play_sound(OVER_SOUND)
+
+
+

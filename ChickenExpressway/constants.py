@@ -96,8 +96,8 @@ SCORE_FORMAT = "SCORE: {}"
 # RACKET
 RACKET_GROUP = "rackets"
 RACKET_IMAGES = [f"ChickenExpressway/assets/images/{n:03}.png" for n in range(100, 103)]
-RACKET_WIDTH = 106
-RACKET_HEIGHT = 28
+RACKET_WIDTH = 28
+RACKET_HEIGHT = 60
 RACKET_RATE = 3
 RACKET_VELOCITY = 1
 
@@ -109,8 +109,8 @@ BRICK_IMAGES = {
     "p": [f"ChickenExpressway/assets/images/{i:03}.png" for i in range(30,39)],
     "y": [f"ChickenExpressway/assets/images/{i:03}.png" for i in range(40,49)]
 }
-BRICK_WIDTH = 80
-BRICK_HEIGHT = 28
+BRICK_WIDTH = 160
+BRICK_HEIGHT = 60
 BRICK_DELAY = 0.5
 BRICK_RATE = 4
 BRICK_POINTS = 50
@@ -155,5 +155,5 @@ CAR4_POINTS = 50
 # DIALOG
 DIALOG_GROUP = "dialogs"
 ENTER_TO_START = "PRESS ENTER TO START"
-PREP_TO_LAUNCH = "PREPARING TO LAUNCH"
+PREP_TO_LAUNCH = "Winner Winner Chicken Dinner"
 WAS_GOOD_GAME = "GAME OVER"

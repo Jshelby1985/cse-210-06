@@ -19,26 +19,11 @@ class MoveCarsAction(Action):
             velocity = body.get_velocity()
             position = body.get_position()
             position = position.add(velocity)
+            x = position.get_x()
+
+            if x < -180:
+                position = Point(SCREEN_WIDTH, position.get_y())
+            elif x > (SCREEN_WIDTH):
+                position = Point(0-180, position.get_y())
+            
             body.set_position(position)
-
-        # for car in car2:
-        #     body = car.get_body()
-        #     velocity = body.get_velocity()
-        #     position = body.get_position()
-        #     position = position.add(velocity)
-        #     body.set_position(position)
-
-        # for car in car3:
-        #     body = car.get_body()
-        #     velocity = body.get_velocity()
-        #     position = body.get_position()
-        #     position = position.add(velocity)
-        #     body.set_position(position)
-
-        # for car in car4:
-        #     body = car.get_body()
-        #     velocity = body.get_velocity()
-        #     position = body.get_position()
-        #     position = position.add(velocity)
-        #     body.set_position(position)
-        

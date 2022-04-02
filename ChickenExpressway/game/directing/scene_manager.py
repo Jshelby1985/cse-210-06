@@ -162,7 +162,7 @@ class SceneManager:
                     if frames == 1:
                         points *= 2
 
-                    if r == 4 or r == 12:
+                    if r == 2 or r == 6:
 
                         position = Point(x, y)
                         size = Point(BRICK_WIDTH, BRICK_HEIGHT)
@@ -258,7 +258,7 @@ class SceneManager:
         script.clear_actions(UPDATE)
         script.add_action(UPDATE, self.MOVE_RACKET_ACTION)
         script.add_action(UPDATE, self.MOVE_CARS_ACTION)
-        # script.add_action(UPDATE, self.COLLIDE_BRICKS_ACTION)
+        script.add_action(UPDATE, self.COLLIDE_BRICKS_ACTION)
         # script.add_action(UPDATE, self.COLLIDE_RACKET_ACTION)
         script.add_action(UPDATE, self.MOVE_RACKET_ACTION)
         script.add_action(UPDATE, self.CHECK_OVER_ACTION)
