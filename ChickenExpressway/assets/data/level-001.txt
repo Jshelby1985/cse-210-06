@@ -1,13 +1,13 @@
-b0,b1,b0,b0,b0,b0,g1,b0,b0,b1,b0,b0,b0,b1,b0,b0,b0,b1
+y1,b0,b0,b0,b1,b0,b0,b0,b0,b0,b0,y1,b0,b0,b0,b1,b0,b0,b0,y1,b0,b0,b0,b0,b0,b0,b0,b0,b1,b0,b0,b0,b0,b1
 b0
 b0
 b0
-b1,b0,b0,g1,b0,b0,p1
+g1,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,p1,b0,b0,b0,b0,b0,g1,b0,b0,p1,b0,b0,b0,b0,p1
 b0
 b0
 b0
-b0,g1,b0,b0,b0,b0,b1
+b0,b0,b0,b0,b0,b1,b0,b0,b0,y1,b0,b0,b0,b0,b0,b1,b0,b0,b0,y1,b0,b0,b0,b0,b0,b0,b1,b0,b0,b0,y1
 b0
 b0
 b0
-b1,b0,b0,b0,y1
+g1,b0,b0,b0,b0,b0,b0,b0,b0,p1,b0,b0,b0,b0,b0,b0,b0,b0,g1,b0,b0,b0,b0,b0,b0,b0,b0,p1,b0,b0,b0,b0,b0,b0,b0,b0,g1,b0,b0,b0,p1
