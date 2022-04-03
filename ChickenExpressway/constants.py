@@ -27,7 +27,7 @@ FONT_SMALL = 32
 FONT_LARGE = 48
 
 # SOUND
-BOUNCE_SOUND = "ChickenExpressway/assets/sounds/boing.wav"
+BOUNCE_SOUND = "ChickenExpressway/assets/sounds/killChicken.wav"
 WELCOME_SOUND = "ChickenExpressway/assets/sounds/start.wav"
 OVER_SOUND = "ChickenExpressway/assets/sounds/over.wav"
 
