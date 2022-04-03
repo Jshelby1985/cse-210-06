@@ -155,5 +155,5 @@ CAR4_POINTS = 50
 # DIALOG
 DIALOG_GROUP = "dialogs"
 ENTER_TO_START = "PRESS ENTER TO START"
-PREP_TO_LAUNCH = "Winner Winner Chicken Dinner"
-WAS_GOOD_GAME = "GAME OVER"
+PREP_TO_LAUNCH = "Ready? Go!"
+WAS_GOOD_GAME = "End of the road chicken! Game Over"
