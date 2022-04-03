@@ -29,11 +29,12 @@ class CollideBrickAction(Action):
                 position = Point(CENTER_X - RACKET_WIDTH , SCREEN_HEIGHT - RACKET_HEIGHT)
                 racket_body.set_position(position)
                 
-                # if stats.get_lives() > 0:
-                #     callback.on_next(TRY_AGAIN) 
-                # else:
-                #     callback.on_next(GAME_OVER)
-                #     self._audio_service.play_sound(OVER_SOUND)
+                
+                if stats.get_lives() > 0:
+                     callback.on_next(TRY_AGAIN)
+                else:
+                     callback.on_next(GAME_OVER)
+                     
 
 
 
