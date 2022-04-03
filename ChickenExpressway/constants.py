@@ -56,6 +56,8 @@ TRY_AGAIN = 1
 NEXT_LEVEL = 2
 IN_PLAY = 3
 GAME_OVER = 4
+GAME_OVER1 = 4
+
 
 # LEVELS
 LEVEL_FILE = "ChickenExpressway/assets/data/level-{:03}.txt"
@@ -157,3 +159,4 @@ DIALOG_GROUP = "dialogs"
 ENTER_TO_START = "PRESS ENTER TO START"
 PREP_TO_LAUNCH = "Ready? Go!"
 WAS_GOOD_GAME = "End of the road chicken! Game Over"
+WIN = "Nice Job! You crossed the road!"

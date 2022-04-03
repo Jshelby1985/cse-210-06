@@ -1,6 +1,13 @@
 from constants import *
 from game.casting.point import Point
 from game.scripting.action import Action
+from game.casting.sound import Sound
+from game.scripting.action import Action
+from game.casting.point import Point
+from game.casting.body import Body
+from game.casting.label import Label
+from game.casting.text import Text 
+
 
 
 class MoveRacketAction(Action):
@@ -25,9 +32,16 @@ class MoveRacketAction(Action):
         body.set_position(position)
 
         if y < 0:
-            position = Point(SCREEN_HEIGHT, position.get_x())
-        elif y > (SCREEN_HEIGHT):
-            position = Point(0, position.get_x())
-        body.set_position(position)
+            
+            self._add_dialog(cast, WIN)
+
+    def _add_dialog(self, cast, message):
+        cast.clear_actors(DIALOG_GROUP)
+        text = Text(message, FONT_FILE, FONT_SMALL, ALIGN_CENTER)
+        position = Point(CENTER_X, CENTER_Y)
+        label = Label(text, position)
+        cast.add_actor(DIALOG_GROUP, label)
+        
+        
         
         
