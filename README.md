@@ -39,7 +39,7 @@ root                    (project root folder)
 * Raylib Python CFFI 3.7
 
 ## Authors
----
+----
 TEAM H: 
 * Joseph Mackenzie - techncrypt@gmail.com
 * Cooper Cook - coppercook7@byui.edu
